@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef77c509-c2a2-467c-a288-77de4a4b9380" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/OptimFactorial.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OptimFactorial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEST.py" afterDir="false" />
+    <list default="true" id="ef77c509-c2a2-467c-a288-77de4a4b9380" name="Changes" comment="Change">
+      <change beforePath="$PROJECT_DIR$/OptimFactorial.py" beforeDir="false" afterPath="$PROJECT_DIR$/OptimFactorial.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +83,19 @@
       <option name="presentableId" value="Default" />
       <updated>1742969573957</updated>
     </task>
+    <task id="LOCAL-00001" summary="Change">
+      <option name="closed" value="true" />
+      <created>1742970494025</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1742970494025</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Change" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change" />
   </component>
 </project>
