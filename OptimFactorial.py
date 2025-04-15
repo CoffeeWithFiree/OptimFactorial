@@ -1,4 +1,4 @@
-
+import math
 class OptimFactorial:
     @staticmethod
     def NaivAlgorithm(n):
@@ -11,3 +11,21 @@ class OptimFactorial:
             return fact
         except:
             raise Exception("incorrect input")
+
+    @staticmethod
+    def TreeAlgorithm(n):
+        """"""
+        if n >= 2:
+            return OptimFactorial.RekursTree(2, n)
+        else:
+            return "Input num more than 2"
+
+    @staticmethod
+    def RekursTree(a, b):
+        if b - a == 1:
+            return b * a
+        elif a == b:
+            return a
+        else:
+            midd = math.floor((b + a) / 2)
+            return OptimFactorial.RekursTree(a, midd) * OptimFactorial.RekursTree(midd + 1, b)
