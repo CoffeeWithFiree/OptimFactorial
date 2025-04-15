@@ -17,8 +17,10 @@ class OptimFactorial:
         """"""
         if n >= 2:
             return OptimFactorial.RekursTree(2, n)
+        elif n >= 0:
+            return 1
         else:
-            return "Input num more than 2"
+            return 0
 
     @staticmethod
     def RekursTree(a, b):
