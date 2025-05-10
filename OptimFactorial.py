@@ -14,7 +14,8 @@ class OptimFactorial:
 
     @staticmethod
     def TreeAlgorithm(n):
-        """"""
+        """The optimal algorithm is a recursive algorithm based on the idea
+        that the multipliers are always approximately the same length."""
         if n >= 2:
             return OptimFactorial.RekursTree(2, n)
         elif n >= 0:
@@ -24,6 +25,7 @@ class OptimFactorial:
 
     @staticmethod
     def RekursTree(a, b):
+        """recursive division of multipliers into pairs"""
         if b - a == 1:
             return b * a
         elif a == b:
@@ -31,3 +33,25 @@ class OptimFactorial:
         else:
             midd = math.floor((b + a) / 2)
             return OptimFactorial.RekursTree(a, midd) * OptimFactorial.RekursTree(midd + 1, b)
+
+    @staticmethod
+    def SieveofEratosthenes(n):
+        """the algorithm for finding prime numbers"""
+        nums = [i for i in range(2, n + 1)]
+        mask = [1 for _ in range(2, n + 1)]
+        step = 2
+        while step * step < n:
+            index_num = nums.index(step)
+            index_start = nums.index(step * step)
+            for i in range(index_start, len(nums), step):
+                mask[i] = 0
+            for j in range(index_num + 1, len(nums)):
+                if mask[j] == 1:
+                    step = nums[j]
+                    break
+        simple_nums = []
+        for i in range(len(nums)):
+            if mask[i] == 1:
+                simple_nums.append(nums[i])
+
+        return simple_nums
