@@ -1,4 +1,5 @@
 import math
+
 class OptimFactorial:
     @staticmethod
     def NaivAlgorithm(n):
@@ -33,6 +34,24 @@ class OptimFactorial:
         else:
             midd = math.floor((b + a) / 2)
             return OptimFactorial.RekursTree(a, midd) * OptimFactorial.RekursTree(midd + 1, b)
+
+    @staticmethod
+    def FactFactor(n):
+        """Calculation algorithm by factorization"""
+        simple_nums = OptimFactorial.SieveofEratosthenes(n)
+        degrees_ = []
+        for cur_num in simple_nums:
+            i = cur_num
+            sum_ = 0
+            while i <= n:
+                sum_ += int(n / i)
+                i *= cur_num
+            degrees_.append(sum_)
+        result = 1
+        for k in range(len(simple_nums)):
+            result *= pow(simple_nums[k], degrees_[k])
+        return result
+
 
     @staticmethod
     def SieveofEratosthenes(n):
